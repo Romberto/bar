@@ -52,8 +52,9 @@
     justify-content: space-between;
     padding: 0 10px;
     position: absolute;
-    z-index: 10;
+    z-index: 8;
     width: 100%;
+
 }
 .header__list-contact{
     display: flex;
@@ -66,34 +67,13 @@
     cursor: pointer;
     animation: rotaide 1s 0.5s linear;
 }
-.header__popup{
-    position: absolute;
-    top: 140px;
-    right: 10px;
-    background-image: url(../images/fon.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 200px;
-    height: 320px;
-    border: solid 2px #fff;
-    border-radius: 5px;
-    padding: 15px 5px;
-    transform: translateY(-900px);
-    transition: all 1s ease;
-}
+
 
 .popup_is_active{
     transform: none;
 }
 
-.header__popup_item{
-    font-size: 20px;
-    text-align: center;
-    padding-bottom: 10px;
-    padding-top: 10px;
-    border-bottom: solid 5px #a75248;
-    cursor: pointer;
-}
+
 .menu__burger_line{
     position: absolute;
     top: 5px;
@@ -126,10 +106,7 @@
     top:35px !important;
 }    
 
-.header__popup_item:hover{
-    color:#a75248;
-    border-left: solid 5px #a75248;
-}
+
 
 
 .header__list-item{
@@ -184,10 +161,6 @@
     position: relative;
 }
 
-.mobile__contacts_block{
-    display: none;
-
-}
 
 .phone__link{
     font-size: 25px;
@@ -252,8 +225,158 @@
     z-index: 100;
 }
 
+/* меню боковое */
+
+.header__menu{
+    width: 50vw;
+    height: 100vh;
+    background-image: url('/images/fon.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 110;
+    display: none;
+    padding: 5px 3px;
+}
 
 
+.menu__logo_img{
+    width: 100%;
+}
+
+.menu__logo_link{
+    margin-bottom: 10px;
+}
+
+.header__menu_inner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.menu__burger {
+    width: 220px;
+    height: 40px;
+    cursor: pointer;
+    position: relative;
+    margin-bottom: 32px;
+}
+
+.menu__burger:hover
+ {
+    color: red;
+}
+.menu__burger:hover .burger__line,
+.menu__burger:hover .burger__line::after,
+.menu__burger:hover .burger__line::before{
+    background-color: red;
+}
+
+
+
+
+.burger__line,
+.burger__line::after,
+.burger__line::before {
+    position: absolute;
+    top: 0;
+    left: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    width: 60px;
+    height: 6px;
+}
+
+.burger__line::after{
+    content: "";
+    top: 18px;
+    left: 0px;
+}
+
+.burger__line::before{
+    content: "";
+    top: 36px;
+    left: 0px;
+}
+.burgert__title {
+    text-transform: uppercase;
+    font-size: 40px;
+    font-family: 500;
+    text-align: end;
+}
+
+.header__menu_list {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.header__menu_item {
+    margin-bottom: 25px;
+    width: 100%;
+}
+.header__menu_item-link {
+    font-size: 27px;
+    font-weight: 100;
+    width: 100%;
+    text-transform: uppercase;
+}
+
+.header__menu_item-link:hover{
+    color: red;
+    border-bottom: 2px solid red;
+}
+
+.contact__block{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.contact__block-link {
+
+}
+.contact__block-img {
+    width: 70px;
+    height: 70px;
+}
+
+.header__menu-phone,
+.header__menu-mail {
+    position: relative;
+    margin-bottom: 20px;
+}
+.menu_phone_link {
+    font-size: 27px;
+    
+}
+
+.menu_phone_link::after{
+    content: url('/images/phone-call-auricular-symbol-in-black_icon-icons.com_56483.svg');
+    position: absolute;
+    top: -7px;
+    left: -45px;
+    width: 40px;
+    height: 40px;
+}
+.menu_mail_link{
+    font-size: 27px;
+}
+
+.menu_mail_link::after {
+    content: url('/images/mail-black-envelope-symbol_icon-icons.com_56519.svg');
+    position: absolute;
+    top: -7px;
+    left: -45px;
+    width: 40px;
+    height: 40px;
+}
+
+
+
+/* анимация */
 @keyframes rotaide{
     from{
         transform: rotate(0);
