@@ -2,31 +2,27 @@
     position: relative;
 }
 
-.bar__info-btn{
-    cursor: pointer;
-    /* border: solid 2px red; */
-    width: 300px;
-    margin: 20px auto;
-    padding: 10px 7px;
-    border-radius: 5px;
-    text-align: center;
-    background-color: #a75248;
-    box-shadow: 0 0 15px  rgba(235, 10, 10, 0.5);
-    font-size: 30px;
-    font-weight: 600;
-
-}
 
 .bar__info_wrapper{
     margin: 20px auto;
     width: 700px;
     border: solid 2px #fff;
     border-radius: 5px;
-    display: none;
     transform: translateY(0);
     transition: all 1s ease 0s;
 }
 
 .is_active{
     display: block;
+}
+
+/* slider barUp*/
+
+
+.barUp{
+    width: 100%;
+}
+
+.barUp__img{
+    width: 200px;
 }
