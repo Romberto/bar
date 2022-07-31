@@ -139,7 +139,12 @@
     .banner__text{
         font-size: 35px;
     }
+    .barUp__img{
+        width: 200px;
+    }
 }
+
+
 @media(max-width:480px){
 
     .menu__burger_line:nth-child(3){

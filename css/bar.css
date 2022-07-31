@@ -19,10 +19,44 @@
 /* slider barUp*/
 
 
+
 .barUp{
-    width: 100%;
+    position: relative;
+}
+.slick-track{
+    display: flex;
+    align-items: flex-start;
+}
+.barUp__item{
+    text-align: center;
+}
+.slick-list{
+    overflow: hidden;
 }
 
-.barUp__img{
-    width: 200px;
+.barUp .slick-arrow{
+    position: absolute;
+    top: 50%;
+    z-index: 20;
+    font-size: 0;
+    width: 30px;
+    height: 50px;
+    border: none;
+    margin: -8px 0  0 0 ;
+
+}
+
+.barUp .slick-next{
+    right: 0;
+    background: url('/images/arrows/arrows-rigth.svg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.barUp .slick-prev{
+    left: 0;
+    background: url('/images//arrows/arrows-left.svg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+
 }
