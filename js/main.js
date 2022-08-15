@@ -17,4 +17,23 @@ window.addEventListener('load', function(){
           container.fadeOut();
       }
   });
+
+  $('.cocktail__btn-js').on('click', function(e){
+    $('.cocktail__popup').fadeOut()
+    $(this).parent().find('.cocktail__popup').fadeIn()
+  });
+
+  $('.cocktail__popup-btn').on('click', function(e){
+    $('.cocktail__popup').fadeOut()
+  });
+
+  $(document).mouseup(function (e) {
+    var container = $(".cocktail__popup");
+    if (container.has(e.target).length === 0){
+        container.fadeOut();
+    }
+  });
+
+
+  
 });

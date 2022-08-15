@@ -4,7 +4,9 @@
         position: absolute;
         top: 40px;
         left: -80px;
-
+    }
+    .cocktail__list{
+        justify-content: space-around;
     }
 
 }
@@ -112,8 +114,16 @@
         font-size: 18px;
     }
     
-    
 }
+
+@media(max-width: 525px){
+    .cocktail__item{
+        margin-right: 0;
+        width: 320px;
+        height: 698px;
+    }
+}
+
 @media(max-width: 540px){
     .header__list-contact{
         display: none;
