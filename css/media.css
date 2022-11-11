@@ -8,6 +8,10 @@
     .cocktail__list{
         justify-content: space-around;
     }
+    .k-gallery__wrapper {
+        position: absolute;
+        width:auto;
+        height: 100%;
 
 }
 
@@ -122,6 +126,18 @@
         width: 320px;
         height: 698px;
     }
+
+    .k-gallery__wrapper{
+        width: 400px;
+        height: auto;
+    }
+    .k-gallery__big-img{
+        width: 400px;
+        height: auto;
+    }
+    .k-gallery__enner{
+
+    }
 }
 
 @media(max-width: 540px){
@@ -186,6 +202,14 @@
     .header__menu{
         width: 70vw;
     }
+    .k-gallery__wrapper{
+        width: 350px;
+    }
+    .k-gallery__big-img{
+        width: 350px;
+    }
+
+
 }
 
 @media(max-width: 400px){
