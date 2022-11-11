@@ -116,7 +116,7 @@
     
 }
 
-@media(max-width: 525px){
+@media(max-width: 570px){
     .cocktail__item{
         margin-right: 0;
         width: 320px;
