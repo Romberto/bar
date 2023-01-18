@@ -1,0 +1,62 @@
+.bar__info{
+    position: relative;
+}
+
+
+.bar__info_wrapper{
+    margin: 20px auto;
+    max-width: 700px;
+    border: solid 2px #fff;
+    border-radius: 5px;
+    transform: translateY(0);
+    transition: all 1s ease 0s;
+}
+
+.is_active{
+    display: block;
+}
+
+/* slider barUp*/
+
+
+
+.barUp{
+    position: relative;
+}
+.slick-track{
+    display: flex;
+    align-items: flex-start;
+}
+.barUp__item{
+    text-align: center;
+}
+.slick-list{
+    overflow: hidden;
+}
+
+.barUp .slick-arrow{
+    position: absolute;
+    top: 50%;
+    z-index: 20;
+    font-size: 0;
+    width: 30px;
+    height: 50px;
+    border: none;
+    margin: -8px 0  0 0 ;
+
+}
+
+.barUp .slick-next{
+    right: 0;
+    background: url('/images/arrows/arrows-rigth.svg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.barUp .slick-prev{
+    left: 0;
+    background: url('/images//arrows/arrows-left.svg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+}

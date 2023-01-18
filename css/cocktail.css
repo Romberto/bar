@@ -1,0 +1,126 @@
+.cocktail{
+    position: relative;
+}
+
+.cocktail__head-title{
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 140%;
+    margin-bottom: 20px;
+}
+
+.cocktail__list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cocktail__item{
+    position: relative;
+    width: 250px;
+    height: 575px;
+    border: solid 2px #fff;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.cocktail__img{
+    width: 100%;
+}
+
+.cocktail__btn{
+    display: block;
+    width: 90%;
+    height: 70px;
+    background-color: #131313;
+    border-radius: 20px;
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+    border: solid 2px #fff;
+    margin: 0 auto;
+    padding-top: 15px;
+    cursor: pointer;
+}
+
+.cocktail__popup{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:url(../images/cocktail/popup-fon.jpg);
+    display: none;
+    padding-top: 150px;
+    padding-left: 20px;
+    opacity: 0.9;
+}
+
+.cocktail__popup-btn{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+    background-color: #131313;
+    border-radius: 50%;
+
+}
+
+.cocktail__popup-btn::after,
+.cocktail__popup-btn::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 100%;
+    height: 8px;
+    background-color: #fff;
+   
+}
+
+.cocktail__popup-btn::after{
+    transform: translateY(-50%) rotate(-45deg);
+}
+
+.cocktail__popup-btn::before{
+    transform: translateY(-50%) rotate(45deg);
+}
+
+.cocktail__popup-title{
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+
+.cocktail__popup-list{
+    margin-bottom: 30px;
+}
+
+.cocktail__popup-item{
+    position: relative;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.cocktail__popup-item::after{
+    content: '';
+    position: absolute;
+    top:50%;
+    left: -10px;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: #fff;
+    transform: translateY(-50%);
+}
+
+.cocktail__popup-text{
+    width: 80%;
+    text-align: end;
+    font-size: 18px;
+}
